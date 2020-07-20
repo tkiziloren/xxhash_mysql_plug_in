@@ -1,4 +1,6 @@
-This repo contains user defined function **"xxhash"** for MySQL.
+This repo contains necessary tools to wrap **"xxhash"** hashing library as a mysql plug in and use [**xxhash**](https://github.com/Cyan4973/xxHash) library as a [user defined function](https://dev.mysql.com/doc/refman/8.0/en/adding-udf.html#udf-calling) in MySQL.
+
+>See this [Stackoverflow Question](https://stackoverflow.com/questions/62512975/xxhash-as-a-mysql-user-defined-function) for further details.
 
 Note:
 **xxhash_mysql_plug_in** does not install dependencies such as **libmysqlclient** or **mysql-server** or anything like that.
