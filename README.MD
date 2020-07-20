@@ -29,7 +29,7 @@ You can register this function manually with this way:
 $ mysql -uroot -p<PASSWORD> <DB> -e "CREATE FUNCTION xxhash RETURNS INTEGER SONAME 'mysqlxxhash.so'"
 ```
 
-<DB> parameter is optional. If you omit it, then this function will be available for all
+DB parameter is optional. If you omit it, then this function will be available for all
 databases served by your particular instance of MySQL.
 
 
@@ -37,7 +37,7 @@ To drop the function run:
 ```console
 $ mysql -uroot -p<PASSWORD> <DB> -e "DROP FUNCTION xxhash"
 ```
-(again <DB> parameter is optional)
+(again DB parameter is optional)
 
 
 > **Disclaimer1:** xxHash is an extremely fast non-cryptographic hash algorithm, working at speeds close to RAM limits. It is proposed in two flavors, 32 and 64 bits. The algorithm is developed by Yann Collet(@Cyan4973)
