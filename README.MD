@@ -1,13 +1,11 @@
-This repo contains user defined function "xxhash" for MySQL.
-This function is used in SureChEMBL project.
+This repo contains user defined function **"xxhash"** for MySQL.
 
 Note:
-xxhash_mysql_plug_in does not install dependencies on libmysqlclient or mysql-server or anything like that.
+**xxhash_mysql_plug_in** does not install dependencies such as **libmysqlclient** or **mysql-server** or anything like that.
 
 In order to compile the library make sure **gcc**, **g++**, **libmysqlclient-dev** and **make** tools installed on your system. 
 
-Example configuration for required tools in order to compile for debian based distributions. 
-
+Install required tools for compiling the plug (for debian based distributions). 
 
 ```console
 $ sudo apt install make
@@ -24,9 +22,7 @@ $ make \\ creates mysqlxxhash.so in the local folder
 $ make install \\ creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
 ```
 
-You can register this function manually (or automate this task for your particular database)
-this way:
-
+You can register this function manually with this way:
 ```console
 $ mysql -uroot -p<PASSWORD> <DB> -e "CREATE FUNCTION xxhash RETURNS INTEGER SONAME 'mysqlxxhash.so'"
 ```
