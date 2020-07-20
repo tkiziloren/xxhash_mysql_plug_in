@@ -6,28 +6,28 @@ xxhash_mysql_plug_in does not install dependencies on libmysqlclient or mysql-se
 
 In order to compile the library make sure **gcc**, **g++**, **libmysqlclient-dev** and **make** tools installed on your system. 
 
-Example configuration for required tools for debian based distributions. 
+Example configuration for required tools in order to compile for debian based distributions. 
 
 
-```
-sudo apt install make
-sudo apt install gcc
-sudo apt install g++
-sudo apt install libmysqlclient-dev
+```console
+$ sudo apt install make
+$ sudo apt install gcc
+$ sudo apt install g++
+$ sudo apt install libmysqlclient-dev
 ```
 
 > Note: If you need to install this plug in to non-debian based distributions, please update the paths in the Makefile to match with mysql path in your system. 
 
 Compiling:
-```
-make \\ creates mysqlxxhash.so in the local folder
-make install \\ creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
+```console
+$ make \\ creates mysqlxxhash.so in the local folder
+$ make install \\ creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
 ```
 
 You can register this function manually (or automate this task for your particular database)
 this way:
 
-```
+```console
 $ mysql -uroot -p<PASSWORD> <DB> -e "CREATE FUNCTION xxhash RETURNS INTEGER SONAME 'mysqlxxhash.so'"
 ```
 
@@ -36,7 +36,7 @@ databases served by your particular instance of MySQL.
 
 
 To drop the function run:
-```
+```console
 $ mysql -uroot -p<PASSWORD> <DB> -e "DROP FUNCTION xxhash"
 ```
 (again <DB> parameter is optional)
