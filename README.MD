@@ -4,7 +4,7 @@ This function is used in SureChEMBL project.
 Note:
 xxhash_mysql_plug_in does not install dependencies on libmysqlclient or mysql-server or anything like that.
 
-In order to compile the library make sure **gcc**, **gpp**, **libmysqlclient-dev** and **make** tools installed on your system. 
+In order to compile the library make sure **gcc**, **g++**, **libmysqlclient-dev** and **make** tools installed on your system. 
 
 Example configuration for required tools for debian based distributions. 
 
