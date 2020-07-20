@@ -18,8 +18,8 @@ $ sudo apt install libmysqlclient-dev
 
 Compiling:
 ```console
-$ make \\ creates mysqlxxhash.so in the local folder
-$ make install \\ creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
+$ make #creates mysqlxxhash.so in the local folder
+$ make install #creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
 ```
 
 You can register this function manually with this way:
