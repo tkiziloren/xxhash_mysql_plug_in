@@ -43,7 +43,7 @@ After installing plugin you can run use the **xxhash** function in your select s
 
 Mysql call                  |  Python xxhash library call for cross check
 :-------------------------:|:-------------------------:
-![](./images/xxhash_select.png?raw=true) | ![](./images/xxhash_python.png?raw=true)
+![](./images/xxhash_mysql_select.png?raw=true) | ![](./images/xxhash_python_call.png?raw=true)
 
 
 > **Disclaimer1:** xxHash is an extremely fast non-cryptographic hash algorithm, working at speeds close to RAM limits. It is proposed in two flavors, 32 and 64 bits. The algorithm is developed by Yann Collet(@Cyan4973)
