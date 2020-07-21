@@ -85,7 +85,7 @@ static longlong xxHash(const char *in, longlong length) {
 }
 
 /**
- * Compute the Irvine hash of a string.
+ * Compute the xxhash hash of a string.
  *
  * Takes a pointer to UDF_INIT struct which contains pre-allocated memory
  * in which work can be done; pointer to UDF_ARGS struct which 
@@ -93,7 +93,7 @@ static longlong xxHash(const char *in, longlong length) {
  * to mem which can be set to 1 if the result is NULL; pointer
  * to mem which can be set to 1 if the calculation resulted in an error.
  *
- * @return Irvine hash of the string.
+ * @return xxhash hash of the string.
  */
 longlong xxhash(UDF_INIT *initid, UDF_ARGS *args, char *is_null, char *error) {
   const char *s = args->args[0];
