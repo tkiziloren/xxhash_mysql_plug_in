@@ -41,9 +41,9 @@ $ mysql -uroot -p<PASSWORD> <DB> -e "DROP FUNCTION xxhash"
 
 After installing plugin you can run use the **xxhash** function in your select statements.
 
-![Mysql select call](https://github.com/tkiziloren/xxhash_mysql_plug_in/blob/master/images/xxhash_select.png?raw=true)
-
-![Cross check with xxhas python library](https://github.com/tkiziloren/xxhash_mysql_plug_in/blob/master/images/python.png?raw=true)
+Mysql call                  |  Python xxhash library call for cross check
+:-------------------------:|:-------------------------:
+![](./images/xxhash_select.png?raw=true) | ![](./images/xxhash_python.png?raw=true)
 
 
 > **Disclaimer1:** xxHash is an extremely fast non-cryptographic hash algorithm, working at speeds close to RAM limits. It is proposed in two flavors, 32 and 64 bits. The algorithm is developed by Yann Collet(@Cyan4973)
