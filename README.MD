@@ -20,7 +20,7 @@ $ sudo apt install libmysqlclient-dev
 
 Compiling:
 ```console
-$ make #creates mysqlxxhash.so in the local folder
+$ make #creates mysqlxxhash.so in the local folder, you can copy it to mysql plugin directory manually.
 $ make install #creates mysqlxxhash.so and installs it to /usr/lib/mysql/plugin directory.
 ```
 
