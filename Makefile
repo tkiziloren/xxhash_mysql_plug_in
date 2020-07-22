@@ -9,7 +9,7 @@ LIB=mysqlxxhash.so
 TARGETDIR=$(DESTDIR)/usr/lib/mysql/plugin
 
 mysqlxxhash.so: mysqlxxhash.cc
-	gcc -Wall -O3 -funroll-loops -I/usr/include/mysql -fPIC -finline-functions -pipe -o $(LIB) -shared -L/usr/lib64 -lmysqlclient mysqlxxhash.cc
+	        gcc -Wall -O3 -funroll-loops `mysql_config --cflags` -fPIC -finline-functions -pipe -o mysqlxxhash.so  -shared `mysql_config --libs` mysqlxxhash.cc
 
 install: mysqlxxhash.so
 	mkdir -p $(TARGETDIR)
